@@ -39,14 +39,14 @@ The caisse module utilizes the following components:
 5.  A custom made PCB board
 
 **SW-420** vibration sensor module pinout diagram:
-![SW-420 vibration-sensor-module pinout](https://github.com/arrafi-musabbir/temporary/blob/main/SW-420-sensor-768x349.jpg)
+![SW-420 vibration-sensor-module pinout](https://github.com/MamaxeFinders/CarWash_IHM/tree/main/Pictures/SW-420-sensor-768x349.jpg)
 
 **2x16 LCD I2C display** module pinout:
-![2x16 LCD I2C display pinout](https://github.com/arrafi-musabbir/temporary/blob/main/I2C-LCD-Module-Hardware-Overview2.png)
-![2x16 LCD I2C display pinout](https://github.com/arrafi-musabbir/temporary/blob/main/I2C-LCD-Module-Hardware-Overview.png)
+![2x16 LCD I2C display pinout](https://github.com/MamaxeFinders/CarWash_IHM/tree/main/Pictures/I2C-LCD-Module-Hardware-Overview2.png)
+![2x16 LCD I2C display pinout](https://github.com/MamaxeFinders/CarWash_IHM/tree/main/Pictures/I2C-LCD-Module-Hardware-Overview.png)
 
 **8 channel 5V relay** module pinout:
-![8 channel 5V relay pinout](https://github.com/arrafi-musabbir/temporary/blob/main/8-channel%20relay.jpg)
+![8 channel 5V relay pinout](https://github.com/MamaxeFinders/CarWash_IHM/tree/main/Pictures//8-channel%20relay.jpg)
 
 The SW-420 vibration-sensor-module is connecteded to the ESP32 as follorwing:
 1.  D0 pin to GPIO13
@@ -67,8 +67,8 @@ The 8 channel 5V relay module is connecteded to the ESP32 as follorwing:
 
 #### CAISSE module pcb wiring layout
 
-![CAISSE module pcb wiring](https://github.com/arrafi-musabbir/temporary/blob/main/caisse.png)
-![CAISSE module pcb wiring](https://github.com/arrafi-musabbir/temporary/blob/main/caisse-wiring-pcb.png)
+![CAISSE module pcb wiring](https://github.com/MamaxeFinders/CarWash_IHM/tree/main/Pictures/caisse.png)
+![CAISSE module pcb wiring](https://github.com/MamaxeFinders/CarWash_IHM/tree/main/Pictures/caisse-wiring-pcb.png)
 
 #### INITITALISATION
 
