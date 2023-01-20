@@ -70,3 +70,21 @@ The 8 channel 5V relay module is connecteded to the ESP32 as follorwing:
 ![CAISSE module pcb wiring](https://github.com/arrafi-musabbir/temporary/blob/main/caisse.png)
 ![CAISSE module pcb wiring](https://github.com/arrafi-musabbir/temporary/blob/main/caisse-wiring-pcb.png)
 
+#### INITITALISATION
+
+##### Module SYSTEM:
+Turn on module SYSTEM by powering it to 5Vdc.
+Use your mobile device in order to connect to the ESP32 WiFi. Select SYSTEM_LAVAGE and connect using the password (123456789 by default).
+Wait for a windows to pop up. It will display the available networks found by the module. Click to the router you wish the module needs to connect to internet. Enter the password and click SAVE.
+Wait until the page disappear. If you go back to your WiFi settings you should now see an available SSID called SYSTEM_CAISSE which confirm the module is properly set (DO NOT CONNECT TO THIS NEW NETWORK).
+
+##### Module CAISSE:
+Once the SYSTEM is connected, you can initiate the module CAISSE.
+As there can be multiple CAISSE, use the micro switch in order to address the module from 1 to 7 using the binary switches (we only use p to 4 CAISSEs here). 
+Then power it up and wait for the LED to turn on. If the module did not manage to connect to SYSTEM, the LED will blink 3 time before it restarts.
+An isolate mode is available if all switches are put to zero. The module CAISSE will start without connecting to the SYSTEM and can be used for test purpose.
+Once the module is connected and you can see the message “BONJOUR” on the LCD screen, turn OFF the module SYSTEM and ON again. Wait until the LED linked to the CAISSE id turns ON. This means both modules are ready to communicate as their mac addresses have been saved to both memories.
+Perform the same process as 2 for all other module CAISSE.
+
+![image](https://user-images.githubusercontent.com/90781283/213630310-f17e1e58-b708-417d-bc4a-d47dc79f55d4.png)
+
