@@ -1,6 +1,3 @@
-# CarWash_IHM
-This project can be used for industrial purpose in order to allow relays activation following user payment. An additional SYSTEM board is used in order to monitor the environment and interact with the admin (using Telegram for push notification and Google Sheet for data acquisition).
-
 ## This repository showcase a CAISSE automation system built with ESP32 modules
 
 ### The whole operation is devided into two following module.
@@ -72,3 +69,4 @@ The 8 channel 5V relay module is connecteded to the ESP32 as follorwing:
 
 ![CAISSE module pcb wiring](https://github.com/arrafi-musabbir/temporary/blob/main/caisse.png)
 ![CAISSE module pcb wiring](https://github.com/arrafi-musabbir/temporary/blob/main/caisse-wiring-pcb.png)
+
