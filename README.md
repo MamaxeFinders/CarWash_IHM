@@ -46,7 +46,8 @@ The caisse module utilizes the following components:
 ![2x16 LCD I2C display pinout](https://github.com/MamaxeFinders/CarWash_IHM/tree/main/Pictures/I2C-LCD-Module-Hardware-Overview.png)
 
 **8 channel 5V relay** module pinout:
-![8 channel 5V relay pinout](https://github.com/MamaxeFinders/CarWash_IHM/tree/main/Pictures//8-channel%20relay.jpg)
+![8 channel 5V relay pinout](https://github.com/MamaxeFinders/CarWash_IHM/tree/main/Pictures/8-channel%20relay.jpg)
+
 
 The SW-420 vibration-sensor-module is connecteded to the ESP32 as follorwing:
 1.  D0 pin to GPIO13
