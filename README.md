@@ -86,5 +86,3 @@ An isolate mode is available if all switches are put to zero. The module CAISSE 
 Once the module is connected and you can see the message “BONJOUR” on the LCD screen, turn OFF the module SYSTEM and ON again. Wait until the LED linked to the CAISSE id turns ON. This means both modules are ready to communicate as their mac addresses have been saved to both memories.
 Perform the same process as 2 for all other module CAISSE.
 
-![image](https://user-images.githubusercontent.com/90781283/213630310-f17e1e58-b708-417d-bc4a-d47dc79f55d4.png)
-
