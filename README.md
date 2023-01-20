@@ -35,8 +35,8 @@ The caisse module utilizes the following components:
 1.  [ESP32 board](https://www.espressif.com/en/products/socs/esp32)
 2.  [SW-420 vibration-sensor-module](https://components101.com/sensors/sw-420-vibration-sensor-module)
 3.  [2x16 LCD I2C display](https://components101.com/displays/16x2-lcd-pinout-datasheet)
-4.  [8 channel 5V relay module](https://components101.com/switches/5v-eight-channel-relay-module-pinout-features-applications-working-datasheet)
-5.  A custom made PCB board
+4.  [8 channel 5V relay module](https://www.amazon.fr/Hiletgo%C2%AE-canaux-module-Opto-isolated-Trigger/dp/B0794RF1ZW)
+5.  A custom made PCB board (See GERBERS file)
 
 **SW-420** vibration sensor module pinout diagram:
 ![SW-420 vibration-sensor-module pinout](https://github.com/MamaxeFinders/CarWash_IHM/tree/main/Pictures/SW-420-sensor-768x349.jpg)
