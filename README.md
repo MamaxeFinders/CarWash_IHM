@@ -39,7 +39,7 @@ The caisse module utilizes the following components:
 5.  A custom made PCB board (See GERBERS file)
 
 **SW-420** vibration sensor module pinout diagram:
-![SW-420 vibration-sensor-module pinout](https://github.com/MamaxeFinders/CarWash_IHM/tree/main/Pictures/SW-420-sensor-768x349.jpg)
+![SW-420 vibration-sensor-module pinout](https://github.com/MamaxeFinders/CarWash_IHM/blob/main/Pictures/SW-420-sensor-768x349.jpg)
 
 **2x16 LCD I2C display** module pinout:
 ![2x16 LCD I2C display pinout](https://github.com/MamaxeFinders/CarWash_IHM/tree/main/Pictures/I2C-LCD-Module-Hardware-Overview2.png)
