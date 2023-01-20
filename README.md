@@ -69,7 +69,7 @@ The 8 channel 5V relay module is connecteded to the ESP32 as follorwing:
 #### CAISSE module pcb wiring layout
 
 ![CAISSE module pcb wiring](https://github.com/MamaxeFinders/CarWash_IHM/tree/main/Pictures/caisse.png)
-![CAISSE module pcb wiring](https://github.com/MamaxeFinders/CarWash_IHM/tree/main/Pictures/caisse-wiring-pcb.png)
+![CAISSE module pcb schematics](https://github.com/MamaxeFinders/CarWash_IHM/tree/main/Pictures/caisse-wiring-pcb.png)
 
 #### INITITALISATION
 
