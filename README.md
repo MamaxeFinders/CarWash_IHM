@@ -34,19 +34,18 @@ The four LEDs indicating CAISSE module with be connected with #define GPIO 19, 1
 The caisse module utilizes the following components: 
 1.  [ESP32 board](https://www.espressif.com/en/products/socs/esp32)
 2.  [SW-420 vibration-sensor-module](https://components101.com/sensors/sw-420-vibration-sensor-module)
-3.  [2x16 LCD I2C display](https://components101.com/displays/16x2-lcd-pinout-datasheet)
-4.  [8 channel 5V relay module](https://www.amazon.fr/Hiletgo%C2%AE-canaux-module-Opto-isolated-Trigger/dp/B0794RF1ZW)
+3.  [2x16 LCD I2C display](https://components101.com/sites/default/files/components/16x2-LCD-Module.jpg)
+4.  [8 channel 5V relay module](https://m.media-amazon.com/images/I/51BrNgOyHdL.jpg)
 5.  A custom made PCB board (See GERBERS file)
 
 **SW-420** vibration sensor module pinout diagram:
 ![SW-420 vibration-sensor-module pinout](https://github.com/MamaxeFinders/CarWash_IHM/blob/main/Pictures/SW-420-sensor-768x349.jpg)
 
 **2x16 LCD I2C display** module pinout:
-![2x16 LCD I2C display pinout](https://github.com/MamaxeFinders/CarWash_IHM/tree/main/Pictures/I2C-LCD-Module-Hardware-Overview2.png)
-![2x16 LCD I2C display pinout](https://github.com/MamaxeFinders/CarWash_IHM/tree/main/Pictures/I2C-LCD-Module-Hardware-Overview.png)
+![2x16 LCD I2C display pinout](https://github.com/MamaxeFinders/CarWash_IHM/blob/main/Pictures/I2C-LCD-Module-Hardware-Overview.png?raw=true)
 
 **8 channel 5V relay** module pinout:
-![8 channel 5V relay pinout](https://github.com/MamaxeFinders/CarWash_IHM/tree/main/Pictures/8-channel%20relay.jpg)
+![8 channel 5V relay pinout](https://github.com/MamaxeFinders/CarWash_IHM/blob/main/Pictures/8-channel%20relay.jpg?raw=true)
 
 
 The SW-420 vibration-sensor-module is connecteded to the ESP32 as follorwing:
@@ -68,8 +67,8 @@ The 8 channel 5V relay module is connecteded to the ESP32 as follorwing:
 
 #### CAISSE module pcb wiring layout
 
-![CAISSE module pcb wiring](https://github.com/MamaxeFinders/CarWash_IHM/tree/main/Pictures/caisse.png)
-![CAISSE module pcb schematics](https://github.com/MamaxeFinders/CarWash_IHM/tree/main/Pictures/caisse-wiring-pcb.png)
+![CAISSE module pcb wiring](https://github.com/MamaxeFinders/CarWash_IHM/blob/main/Pictures/caisse.png?raw=true)
+![CAISSE module pcb schematics](https://github.com/MamaxeFinders/CarWash_IHM/blob/main/Pictures/caisse-wiring-pcb.png?raw=true)
 
 #### INITITALISATION
 
