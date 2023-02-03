@@ -14,10 +14,10 @@ The system module utilizes the following components:
 3.  Four 5V LEDs is connected with the ESP32. The number of LEDs may vary depending on the number of CAISSE module.
 
 **ESP32 board** pinout diagram:
-![ESP32 pinout](https://github.com/arrafi-musabbir/temporary/blob/main/ESP32-SPI-pinout-for-microSD-card-module.png)
+![ESP32 pinout](https://github.com/MamaxeFinders/CarWash_IHM/blob/main/Pictures/esp32-devkit-pinout.png)
 
 **MAX6675** thermocouple module pinout:
-![MAX6675 thermocouple module](https://github.com/arrafi-musabbir/temporary/blob/main/MAX6675-thermocouple-module-pinout-diagram.jpg)
+![MAX6675 thermocouple module](https://github.com/MamaxeFinders/CarWash_IHM/blob/main/Pictures/MAX6675-thermocouple-module-pinout-diagram.jpg)
 
 The MAX6675 thermocouple is connecteded to the ESP32 as follorwing:
 1.  S0 pin to GPIO27
@@ -26,7 +26,7 @@ The MAX6675 thermocouple is connecteded to the ESP32 as follorwing:
 
 The four LEDs indicating CAISSE module with be connected with #define GPIO 19, 18 ,5, 17 of the ESP32
 
-![MAX6675 thermocoupleto ESP32](https://github.com/arrafi-musabbir/temporary/blob/main/system.png)
+![MAX6675 thermocoupleto ESP32](https://github.com/MamaxeFinders/CarWash_IHM/blob/main/Pictures/system.png)
 
 
 ### CAISSE MODULE
