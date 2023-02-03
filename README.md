@@ -1,12 +1,24 @@
-## This repository showcase a CAISSE automation system built with ESP32 modules
+### This repository showcase a CAISSE automation system built with ESP32 modules
 
-### The whole operation is devided into two following module.
-  1. **SYSTEM MODULE**
-  2. **CAISSE MODULE**
 
-## HARDWARE SETUP
+ 
+## The whole operation is devided into the following module.
 
-### SYSTEM MODULE
+ * HARDWARE SETUP
+    * [**SYSTEM MODULE**](#system-module)
+    * [**CAISSE MODULE**](#caisse-module)
+
+ * SOFTWARE
+    * [**SYSTEM MODULE**](#module-system)
+    * [**CAISSE MODULE**](#module-caisse)
+    
+ * INITIALISATION
+    * [**SYSTEM INITIALISATION**](#system-initialisation)
+    * [**CAISSE INITIALISATION**](#caisse-initialisation)
+ 
+# HARDWARE SETUP
+
+## SYSTEM MODULE
 
 The system module utilizes the following components:
 1.  [ESP32 board](https://www.espressif.com/en/products/socs/esp32)
@@ -29,7 +41,7 @@ The four LEDs indicating CAISSE module with be connected with #define GPIO 19, 1
 ![MAX6675 thermocoupleto ESP32](https://github.com/MamaxeFinders/CarWash_IHM/blob/main/Pictures/system.png)
 
 
-### CAISSE MODULE
+## CAISSE MODULE
 
 The caisse module utilizes the following components: 
 1.  [ESP32 board](https://www.espressif.com/en/products/socs/esp32)
@@ -70,10 +82,42 @@ The 8 channel 5V relay module is connecteded to the ESP32 as follorwing:
 ![CAISSE module pcb wiring](https://github.com/MamaxeFinders/CarWash_IHM/blob/main/Pictures/caisse.png?raw=true)
 ![CAISSE module pcb schematics](https://github.com/MamaxeFinders/CarWash_IHM/blob/main/Pictures/caisse-wiring-pcb.png?raw=true)
 
+# SOFTWARE SETUP
+
+## Module SYSTEM
+
+### WIFI manager library
+The ![*WiFiManager*](https://github.com/tzapu/WiFiManager) library for ESP32 provides an easy way to configure and manage WiFi connections in your projects. It offers features such as:
+* Captive portal for setting WiFi credentials
+* Ability to store WiFi credentials in Non-Volatile Memory (NVM)
+* Option to automatically connect to a previously saved network
+* Option to have multiple access points with custom settings
+* Support for custom parameters in the configuration portal
+To use the library, you can follow ![this tutorial](https://microdigisoft.com/esp32-with-wifimanager-to-manage-ssid-and-password-no-hard-coding/) to setup and use the wifi-manager library. Then, you can initialize the WiFiManager object and use its functions to set up and control the WiFi connection.
+
+
+### Setup wifi as soft access point
+Input your: ssid, password, channel, hide_SSID=true/false, max_connection
+
+``` WiFi.softAP("SYSTEM_CAISSE", "123456789", CHANNEL, false, NUMSLAVES); ```
+
+
+### Setup the google-script-id
+
+``` String GOOGLE_SCRIPT_ID = "input your google-script-id here" ; ```
+
+### Initialize Telegram BOT
+
+``` String BOTtoken = "input your telegram bot-token here"; ```
+
 #### INITITALISATION
 
 ##### Module SYSTEM:
-Turn on module SYSTEM by powering it to 5Vdc.
+
+The
+
+
+Turn on module SYSTEM by powering it to 5V DC. Warning: Providing more than 5V will damage the module
 Use your mobile device in order to connect to the ESP32 WiFi. Select SYSTEM_LAVAGE and connect using the password (123456789 by default).
 Wait for a windows to pop up. It will display the available networks found by the module. Click to the router you wish the module needs to connect to internet. Enter the password and click SAVE.
 Wait until the page disappear. If you go back to your WiFi settings you should now see an available SSID called SYSTEM_CAISSE which confirm the module is properly set (DO NOT CONNECT TO THIS NEW NETWORK).
