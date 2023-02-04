@@ -32,7 +32,7 @@ The MAX6675 thermocouple is connecteded to the ESP32 as follorwing:
 2.  CS pin to GPIO14
 3.  SCK pin to GPIO12
 
-The four LEDs indicating CAISSE module with be connected with #define GPIO 19, 18 ,5, 17 of the ESP32
+The four LEDs indicating CAISSE module with be connected with GPIO 19, 18 ,5, 17 of the ESP32
 
 ![MAX6675 thermocoupleto ESP32](https://github.com/MamaxeFinders/CarWash_IHM/blob/main/Pictures/system.png)
 
