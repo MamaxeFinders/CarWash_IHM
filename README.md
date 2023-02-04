@@ -1,7 +1,3 @@
-### This repository showcase a CAISSE automation system built with ESP32 modules
-
-
- 
 ## The whole operation is devided into the following module.
 
  * [**HARDWARE SETUP**](#hardware-setup)
@@ -77,11 +73,14 @@ The 8 channel 5V relay module is connecteded to the ESP32 as follorwing:
 7.  Relay 7 input pin to GPIO0
 8.  Relay 8 input pin to GPIO15
 
-#### CAISSE module pcb wiring layout
+### CAISSE module pcb wiring layout
 
 ![CAISSE module pcb wiring](https://github.com/MamaxeFinders/CarWash_IHM/blob/main/Pictures/caisse.png?raw=true)
 ![CAISSE module pcb schematics](https://github.com/MamaxeFinders/CarWash_IHM/blob/main/Pictures/caisse-wiring-pcb.png?raw=true)
 
+### GERBER FILE
+You can find the ![caisse-module-gerber](https://github.com/MamaxeFinders/CarWash_IHM/tree/main/printed%20circuit%20boards) files here
+ 
 # SOFTWARE SETUP
 
 ### ARDUINO IDE
@@ -146,6 +145,7 @@ Finally you can compile and upload the ![caisse-module code](https://github.com/
 * Wait until the page disappear. If you go back to your WiFi settings you should now see an available SSID called SYSTEM_CAISSE which confirm the module is properly set *(DO NOT CONNECT TO THIS NEW NETWORK)*.
 
 ## CAISSE INITIALISATION
+
 * Once the SYSTEM is connected, you can initiate the module CAISSE.
 * As there can be multiple CAISSE, use the micro switch in order to address the module from 1 to 7 using the binary switches (we only used p to 4 CAISSEs here). 
 * Then power it up and wait for the LED to turn on. If the module did not manage to connect to SYSTEM, the LED will blink 3 time before it restarts.
