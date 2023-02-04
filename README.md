@@ -4,15 +4,15 @@
  
 ## The whole operation is devided into the following module.
 
- * HARDWARE SETUP
+ * [**HARDWARE SETUP**](#hardware-setup)
     * [**SYSTEM MODULE**](#system-module)
     * [**CAISSE MODULE**](#caisse-module)
 
- * SOFTWARE
+ * [**SOFTWARE SETUP**](#software-setup)
     * [**SYSTEM MODULE**](#module-system)
     * [**CAISSE MODULE**](#module-caisse)
     
- * INITIALISATION
+ * [**INITIALISATION**](#initialisation)
     * [**SYSTEM INITIALISATION**](#system-initialisation)
     * [**CAISSE INITIALISATION**](#caisse-initialisation)
  
@@ -84,6 +84,12 @@ The 8 channel 5V relay module is connecteded to the ESP32 as follorwing:
 
 # SOFTWARE SETUP
 
+### ARDUINO IDE
+Download and install the arduino ide by following this link ![ARDUINO IDE](https://docs.arduino.cc/software/ide-v2/tutorials/getting-started/ide-v2-downloading-and-installing)
+
+### ESP32 Add-on
+Install ESP32 board add-on in Arduino IDE by following this link ![ESP32 ADD-ON](https://randomnerdtutorials.com/installing-the-esp32-board-in-arduino-ide-windows-instructions/)
+
 ## Module SYSTEM
 
 ### WIFI manager library
@@ -95,12 +101,19 @@ The ![*WiFiManager*](https://github.com/tzapu/WiFiManager) library for ESP32 pro
 * Support for custom parameters in the configuration portal
 To use the library, you can follow ![this tutorial](https://microdigisoft.com/esp32-with-wifimanager-to-manage-ssid-and-password-no-hard-coding/) to setup and use the wifi-manager library. Then, you can initialize the WiFiManager object and use its functions to set up and control the WiFi connection.
 
+### HTTPClient library
+Install following this link ![HTTPClient](https://github.com/amcewen/HttpClient)
+
+### Thermocouple library
+Install ![MAX6675 library](https://github.com/adafruit/MAX6675-library) from the arduino library manager
+
+### Universal Telegram Bot library
+Install telegram bot library in Arduino IDE by following this link ![UniversalTelegramBot](https://github.com/witnessmenow/Universal-Arduino-Telegram-Bot)
 
 ### Setup wifi as soft access point
 Input your: ssid, password, channel, hide_SSID=true/false, max_connection
 
 ``` WiFi.softAP("SYSTEM_CAISSE", "123456789", CHANNEL, false, NUMSLAVES); ```
-
 
 ### Setup the google-script-id
 
@@ -110,23 +123,33 @@ Input your: ssid, password, channel, hide_SSID=true/false, max_connection
 
 ``` String BOTtoken = "input your telegram bot-token here"; ```
 
-#### INITITALISATION
+### Compile and upload the code
+Finally you can compile and upload the ![system-module code](https://github.com/MamaxeFinders/CarWash_IHM/blob/main/System_Auto_V3.ino) to your system module
 
-##### Module SYSTEM:
+## Module CAISSE
 
-The
+### LiquidCrystal_I2C library
+Install ![LiquidCrystal_I2C library](https://github.com/fdebrabander/Arduino-LiquidCrystal-I2C-library) from the arduino library manager
+
+### Compile and upload the code
+Finally you can compile and upload the ![caisse-module code](https://github.com/MamaxeFinders/CarWash_IHM/blob/main/Caisse_Auto_V3.ino) to your system module
 
 
-Turn on module SYSTEM by powering it to 5V DC. Warning: Providing more than 5V will damage the module
-Use your mobile device in order to connect to the ESP32 WiFi. Select SYSTEM_LAVAGE and connect using the password (123456789 by default).
-Wait for a windows to pop up. It will display the available networks found by the module. Click to the router you wish the module needs to connect to internet. Enter the password and click SAVE.
-Wait until the page disappear. If you go back to your WiFi settings you should now see an available SSID called SYSTEM_CAISSE which confirm the module is properly set (DO NOT CONNECT TO THIS NEW NETWORK).
+# INITIALISATION
 
-##### Module CAISSE:
-Once the SYSTEM is connected, you can initiate the module CAISSE.
-As there can be multiple CAISSE, use the micro switch in order to address the module from 1 to 7 using the binary switches (we only use p to 4 CAISSEs here). 
-Then power it up and wait for the LED to turn on. If the module did not manage to connect to SYSTEM, the LED will blink 3 time before it restarts.
-An isolate mode is available if all switches are put to zero. The module CAISSE will start without connecting to the SYSTEM and can be used for test purpose.
-Once the module is connected and you can see the message “BONJOUR” on the LCD screen, turn OFF the module SYSTEM and ON again. Wait until the LED linked to the CAISSE id turns ON. This means both modules are ready to communicate as their mac addresses have been saved to both memories.
-Perform the same process as 2 for all other module CAISSE.
+## SYSTEM INITIALISATION
+
+* Turn on module SYSTEM by powering it to 5V DC. 
+   * **Warning:** *Providing more than 5V will damage the module*
+* Use your mobile device in order to connect to the ESP32 WiFi. Select SYSTEM_LAVAGE and connect using the password (123456789 by default).
+* Wait for a windows to pop up. It will display the available networks found by the module. Click to the router you wish the module needs to connect to internet. Enter the password and click SAVE.
+* Wait until the page disappear. If you go back to your WiFi settings you should now see an available SSID called SYSTEM_CAISSE which confirm the module is properly set *(DO NOT CONNECT TO THIS NEW NETWORK)*.
+
+## CAISSE INITIALISATION
+* Once the SYSTEM is connected, you can initiate the module CAISSE.
+* As there can be multiple CAISSE, use the micro switch in order to address the module from 1 to 7 using the binary switches (we only used p to 4 CAISSEs here). 
+* Then power it up and wait for the LED to turn on. If the module did not manage to connect to SYSTEM, the LED will blink 3 time before it restarts.
+* An isolate mode is available if all switches are put to zero. The module CAISSE will start without connecting to the SYSTEM and can be used for test purpose.
+* Once the module is connected and you can see the message *BONJOUR* on the LCD screen, turn OFF the module SYSTEM and ON again. Wait until the LED linked to the CAISSE id turns ON. This means both modules are ready to communicate as their mac addresses have been saved to both memories.
+* Perform the same process as 2 for all other module CAISSE.
 
