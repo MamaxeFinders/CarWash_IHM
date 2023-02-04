@@ -124,7 +124,7 @@ Input your: ssid, password, channel, hide_SSID=true/false, max_connection
 ``` String BOTtoken = "input your telegram bot-token here"; ```
 
 ### Compile and upload the code
-Finally you can compile and upload the ![system-module code](https://github.com/MamaxeFinders/CarWash_IHM/blob/main/System_Auto_V3.ino) to your system module
+Finally you can compile and upload the ![system-module code](https://github.com/MamaxeFinders/CarWash_IHM/blob/main/codes/System_Auto_V3.ino) to your system module
 
 ## Module CAISSE
 
@@ -132,7 +132,7 @@ Finally you can compile and upload the ![system-module code](https://github.com/
 Install ![LiquidCrystal_I2C library](https://github.com/fdebrabander/Arduino-LiquidCrystal-I2C-library) from the arduino library manager
 
 ### Compile and upload the code
-Finally you can compile and upload the ![caisse-module code](https://github.com/MamaxeFinders/CarWash_IHM/blob/main/Caisse_Auto_V3.ino) to your system module
+Finally you can compile and upload the ![caisse-module code](https://github.com/MamaxeFinders/CarWash_IHM/blob/main/codes/Caisse_Auto_V3.ino) to your system module
 
 
 # INITIALISATION
