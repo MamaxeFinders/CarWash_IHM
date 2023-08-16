@@ -75,39 +75,39 @@ The 8 channel 5V relay module is connecteded to the ESP32 as follorwing:
 
 ### CAISSE module pcb wiring layout
 
-![CAISSE module pcb wiring](https://github.com/MamaxeFinders/Pictures/CarWash_IHM/blob/main/Pictures/caisse.png?raw=true)
-![CAISSE module pcb schematics](https://github.com/MamaxeFinders/Pictures/CarWash_IHM/blob/main/Pictures/caisse-wiring-pcb.png?raw=true)
+![CAISSE module pcb wiring](https://github.com/MamaxeFinders/CarWash_IHM/blob/main/Pictures/caisse.png?raw=true)
+![CAISSE module pcb schematics](https://github.com/MamaxeFinders/CarWash_IHM/blob/main/Pictures/caisse-wiring-pcb.png?raw=true)
 
 ### GERBER FILE
-You can find the ![caisse-module-gerber](https://github.com/MamaxeFinders/CarWash_IHM/tree/main/printed%20circuit%20boards) files here
+You can find the [caisse-module-gerber](https://github.com/MamaxeFinders/CarWash_IHM/tree/main/printed%20circuit%20boards) files here
  
 # SOFTWARE SETUP
 
 ### ARDUINO IDE
-Download and install the arduino ide by following this link ![ARDUINO IDE](https://docs.arduino.cc/software/ide-v2/tutorials/getting-started/ide-v2-downloading-and-installing)
+Download and install the arduino ide by following this link [ARDUINO IDE](https://docs.arduino.cc/software/ide-v2/tutorials/getting-started/ide-v2-downloading-and-installing)
 
 ### ESP32 Add-on
-Install ESP32 board add-on in Arduino IDE by following this link ![ESP32 ADD-ON](https://randomnerdtutorials.com/installing-the-esp32-board-in-arduino-ide-windows-instructions/)
+Install ESP32 board add-on in Arduino IDE by following this link [ESP32 ADD-ON](https://randomnerdtutorials.com/installing-the-esp32-board-in-arduino-ide-windows-instructions/)
 
 ## Module SYSTEM
 
 ### WIFI manager library
-The ![*WiFiManager*](https://github.com/tzapu/WiFiManager) library for ESP32 provides an easy way to configure and manage WiFi connections in your projects. It offers features such as:
+The [*WiFiManager*](https://github.com/tzapu/WiFiManager) library for ESP32 provides an easy way to configure and manage WiFi connections in your projects. It offers features such as:
 * Captive portal for setting WiFi credentials
 * Ability to store WiFi credentials in Non-Volatile Memory (NVM)
 * Option to automatically connect to a previously saved network
 * Option to have multiple access points with custom settings
 * Support for custom parameters in the configuration portal
-To use the library, you can follow ![this tutorial](https://microdigisoft.com/esp32-with-wifimanager-to-manage-ssid-and-password-no-hard-coding/) to setup and use the wifi-manager library. Then, you can initialize the WiFiManager object and use its functions to set up and control the WiFi connection.
+To use the library, you can follow [this tutorial](https://microdigisoft.com/esp32-with-wifimanager-to-manage-ssid-and-password-no-hard-coding/) to setup and use the wifi-manager library. Then, you can initialize the WiFiManager object and use its functions to set up and control the WiFi connection.
 
 ### HTTPClient library
-Install following this link ![HTTPClient](https://github.com/amcewen/HttpClient)
+Install following this link [HTTPClient](https://github.com/amcewen/HttpClient)
 
 ### Thermocouple library
-Install ![MAX6675 library](https://github.com/adafruit/MAX6675-library) from the arduino library manager
+Install [MAX6675 library](https://github.com/adafruit/MAX6675-library) from the arduino library manager
 
 ### Universal Telegram Bot library
-Install telegram bot library in Arduino IDE by following this link ![UniversalTelegramBot](https://github.com/witnessmenow/Universal-Arduino-Telegram-Bot)
+Install telegram bot library in Arduino IDE by following this link [UniversalTelegramBot](https://github.com/witnessmenow/Universal-Arduino-Telegram-Bot)
 
 ### Setup wifi as soft access point
 Input your: ssid, password, channel, hide_SSID=true/false, max_connection
@@ -123,15 +123,15 @@ Input your: ssid, password, channel, hide_SSID=true/false, max_connection
 ``` String BOTtoken = "input your telegram bot-token here"; ```
 
 ### Compile and upload the code
-Finally you can compile and upload the ![system-module code](https://github.com/MamaxeFinders/CarWash_IHM/blob/main/codes/System_Auto_V3.ino) to your system module
+Finally you can compile and upload the [system-module code](https://github.com/MamaxeFinders/CarWash_IHM/blob/main/codes/System_Auto_V3.ino) to your system module
 
 ## Module CAISSE
 
 ### LiquidCrystal_I2C library
-Install ![LiquidCrystal_I2C library](https://github.com/fdebrabander/Arduino-LiquidCrystal-I2C-library) from the arduino library manager
+Install [LiquidCrystal_I2C library](https://github.com/fdebrabander/Arduino-LiquidCrystal-I2C-library) from the arduino library manager
 
 ### Compile and upload the code
-Finally you can compile and upload the ![caisse-module code](https://github.com/MamaxeFinders/CarWash_IHM/blob/main/codes/Caisse_Auto_V3.ino) to your system module
+Finally you can compile and upload the [caisse-module code](https://github.com/MamaxeFinders/CarWash_IHM/blob/main/codes/Caisse_Auto_V3.ino) to your system module
 
 
 # INITIALISATION
